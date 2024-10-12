@@ -1,0 +1,77 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGILL (0x4) at pc=0x000000010796e700, pid=23281, tid=5123
+#
+# JRE version: OpenJDK Runtime Environment (17.0.13) (fastdebug build 17.0.13-internal+0-adhoc.zhangdongdong.jdk17u)
+# Java VM: OpenJDK 64-Bit Server VM (fastdebug 17.0.13-internal+0-adhoc.zhangdongdong.jdk17u, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, bsd-aarch64)
+# Problematic frame:
+# J 8 c1 java.lang.StringLatin1.hashCode([B)I java.base (42 bytes) @ 0x000000010796e700 [0x000000010796e700+0x0000000000000000]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: Hello
+
+Host: macbook-pro-2.local, "MacBookPro18,3" arm64, 8 cores, 16G, Darwin 24.0.0, macOS 15.0 (24A335)
+Time: Sat Sep 21 17:08:21 2024 CST elapsed time: 87.629262 seconds (0d 0h 1m 27s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000012b808610):  JavaThread "main" [_thread_in_Java, id=5123, stack(0x000000016b8c8000,0x000000016bacb000)]
+
+Stack: [0x000000016b8c8000,0x000000016bacb000],  sp=0x000000016bac9d70,  free space=2055k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+J 8 c1 java.lang.StringLatin1.hashCode([B)I java.base (42 bytes) @ 0x000000010796e700 [0x000000010796e700+0x0000000000000000]
+C  0x00000001485f39d0
+
+
+siginfo: si_signo: 4 (SIGILL), si_code: 2 (ILL_ILLTRP), si_addr: 0x000000010796e700
+
+Registers:
+ x0=0x000000070fc073f0  x1=0x000000070fc073f0  x2=0x000000014830c950  x3=0x000000000000035e
+ x4=0x000000000000035e  x5=0x0000000000000148  x6=0x0000000084400002  x7=0x0000000011000000
+ x8=0x000000000000035e  x9=0x00000000000001b0 x10=0x000000070fe0a140 x11=0x0000000000000000
+x12=0x000000014800b738 x13=0x000000016bac9dc0 x14=0x000000070fc04388 x15=0x0000000000000000
+x16=0x00000001481592d8 x17=0x0000600003c74070 x18=0x0000000000000000 x19=0x00000000000000b6
+x20=0x000000016bac9df8 x21=0x0000000107483080 x22=0x00000001481a1031 x23=0x000000000000000a
+x24=0x00000001485f3a40 x25=0x000000016bacad28 x26=0x00000001481a5360 x27=0x0000000000000000
+x28=0x000000012b808610  fp=0x000000016bac9e50  lr=0x000000010796e03c  sp=0x000000016bac9d70
+pc=0x000000010796e700 cpsr=0x0000000020001000
+
+Register to memory mapping:
+
+ x0=0x000000070fc073f0 is an oop: [B 
+{0x000000070fc073f0} - klass: {type array byte}
+ - length: 10
+ -   0: 53 S
+ -   1: 6f o
+ -   2: 75 u
+ -   3: 72 r
+ -   4: 63 c
+ -   5: 65 e
+ -   6: 46 F
+ -   7: 69 i
+ -   8: 6c l
+ -   9: 65 e
+ x1=0x000000070fc073f0 is an oop: [B 
+{0x000000070fc073f0} - klass: {type array byte}
+ - length: 10
+ -   0: 53 S
+ -   1: 6f o
+ -   2: 75 u
+ -   3: 72 r
+ -   4: 63 c
+ -   5: 65 e
+ -   6: 46 F
+ -   7: 69 i
+ -   8: 6c l
+ -   9: 65 e
+ x2=0x000000014830c950 is pointing into metadata
+ x3=0x000000000000035e is an unknown value
+ x4=
